@@ -1,0 +1,31 @@
+@import "utils/common.less";
+
+.lb-ADicon{
+  width: 100%;
+  .px2rem750(height,147);
+  .flexbox();
+  .justify-content(space-between);
+  background-color: #ffffff;
+  .lb-ADicon-item-container{
+    .flex();
+    .flexbox();
+    .justify-content();
+    .align-items();
+    .flex-direction(column);
+    .lb-ADicon-item-icon{
+      .px2rem750(height,80);
+      .px2rem750(width,80);
+      background-size: 100% 100%;
+    }
+    .lb-ADicon-item-title{
+      .px2rem750(width,110);
+      color: #757575;
+      .px2rem750(font-size,24);
+      .px2rem750(margin-top,12);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+  }
+}

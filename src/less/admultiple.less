@@ -1,0 +1,56 @@
+@import "utils/common.less";
+
+.lb-ADmultiple {
+  width: 100%;
+  .flexbox();
+  .justify-content(space-between);
+  .align-items();
+  .lb-ADmultiple-container{
+    width: 100%;
+    .flexbox();
+    .justify-content(space-between);
+    .align-items();
+    .lb-ADmultiple-item {
+      .flex();
+      background-size: 100% 100%;
+      .px2rem750(margin-right,2);
+      &:last-child{
+        .px2rem750(margin-right,0);
+      }
+    }
+    .admultiple-blank{
+      .flex();
+      background-size: 100% 100%;
+      .px2rem750(margin-right,10);
+      &:first-child{
+        .px2rem750(margin-left,20);
+        .px2rem750(margin-right,10);
+      }
+      &:last-child{
+        .px2rem750(margin-right,20);
+      }
+    }
+  }
+}
+.admultiple-type2{
+  .lb-ADmultiple-container{
+    .lb-ADmultiple-item{
+      .px2rem750(height,350);
+    }
+  }
+}
+.admultiple-type3{
+  .lb-ADmultiple-container{
+    .lb-ADmultiple-item {
+      .px2rem750(height, 265);
+    }
+  }
+}
+.admultiple-type4{
+  .lb-ADmultiple-container{
+    .lb-ADmultiple-item{
+      .px2rem750(height,219);
+    }
+  }
+
+}

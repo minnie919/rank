@@ -1,0 +1,64 @@
+@import './utils/common.less';
+
+.rank_navlist {
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  transition: 1000ms;
+  z-index:9;
+  .rank_navlist_title{
+    .px2rem750(height,86);
+    text-align: left;
+    border-bottom: solid 1px #ffe4e1;
+    text-align: center;
+    span{
+      .px2rem750(font-size,28);
+      .px2rem750(line-height,86);
+      color: #212121;
+    }
+  }
+  .rank_navlist_box{
+    height: 100%;
+    width: 100%;
+    li{
+      color: #212121;
+      .px2rem750(line-height,45);
+      float: left;
+      .px2rem750(font-size,28);
+      .px2rem750(margin-top,38);
+      .px2rem750(margin-right,16);
+      .px2rem750(margin-left,16);
+      &:first-child{
+        .px2rem750(margin-left,28);
+      }
+      &:nth-child(5n+1){.px2rem750(margin-left,28)}
+      &:last-child{
+        .px2rem750(margin-bottom,42);
+      }
+    }
+    .cur{
+      color: #ff3c25;
+    }
+
+  }
+}
+.list_hide{
+  display: none;
+}
+.mask{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5a5a5a;
+  z-index: 5;
+  opacity: 0.6;
+  transition: 1000ms;
+  -webkit-transition: 1000ms;
+}
+
+.hide{
+  display: none !important;
+}

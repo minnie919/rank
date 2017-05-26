@@ -1,0 +1,172 @@
+@import "utils/common.less";
+
+.lb-Gvoucher-list1{
+  .flexbox();
+  .justify-content();
+  .align-items();
+  .flex-direction(column);
+  .lb-Gvoucher-container{
+    background-size: 100% 100%;
+    position: relative;
+    .px2rem750(width,713);
+    .px2rem750(height,130);
+    .flexbox();
+    .justify-content(space-between);
+    .align-items();
+    //左边部分
+    .lb-Gvoucher-left{
+      overflow: hidden;
+      position: absolute;
+      .px2rem750(width,578);
+      height:100%;
+      top:0;
+      left:0;
+      .flexbox();
+      .align-items();
+      color: #212121;
+      .lb-Gvoucher-money{
+        .px2rem(margin-left,27);
+       .px2rem750(font-size,84);
+        color: #212121;
+        &:before{
+          content:'¥';
+        .px2rem750(font-size,28);
+        }
+      }
+      .lb-Gvoucher-info{
+        .flexbox();
+        .justify-content();
+        .align-items(flex-start);
+        .flex-direction(column);
+        .px2rem(margin-left,19);
+        .lb-Gvoucher-limit{
+        .px2rem750(font-size,28);
+        }
+        .lb-Gvoucher-time{
+          .px2rem750(width,528);
+          .ellipsis();
+          .fontSize(24);
+          color: #757575;
+        }
+
+      }
+    }
+    //右边部分
+    .lb-Gvoucher-right{
+      border-left: 1px dashed #f5f5f5;
+      position: absolute;
+      top:0;
+      right:0;
+      .flexbox();
+      .justify-content();
+      .align-items();
+      .flex-direction(column);
+      .px2rem750(width,136);
+      height:100%;
+      .px2rem750(font-size,28);
+      color: #212121;
+      line-height:1;
+      div{
+        line-height: 1;
+      }
+    }
+    .lb-Gvoucher-getTag{
+      position: absolute;
+      bottom:0;
+      right:0;
+      .px2rem750(width,110);
+      .px2rem750(height,87);
+      background-size: 100% 100%;
+      background-image: url(../images/ticket_get.png);
+    }
+  }
+}
+//一行2
+.lb-Gvoucher-list2{
+  .flexbox();
+  .justify-content();
+  .align-items();
+  .flex-direction(row);
+  .lb-Gvoucher-container{
+    background-size: 100% 100%;
+  }
+  .type2{
+    position: relative;
+    .px2rem750(width,350);
+    .px2rem750(height,130);
+    .flexbox();
+    .justify-content(space-between);
+    .align-items();
+    &:first-child{
+      .px2rem750(margin-right,18);
+    }
+    //左边部分
+    .lb-Gvoucher-left{
+      .flex-direction(column);
+      overflow: hidden;
+      position: absolute;
+      .px2rem750(width,283);
+      height:100%;
+      top:0;
+      left:0;
+      .flexbox();
+      .align-items(flex-start);
+      color: #212121;
+      .px2rem750(margin-left,16);
+      .lb-Gvoucher-info{
+        .flexbox();
+        .justify-content(flex-start);
+        .align-items(flex-end);
+        .flex-direction(row);
+        .px2rem750(margin-top,20);
+        .lb-Gvoucher-limit{
+          .px2rem750(font-size,28);
+        }
+        .lb-Gvoucher-money{
+          .px2rem750(font-size,65);
+          line-height:1;
+          &:before{
+            line-height:1;
+            content:'¥';
+            .fontSize(28);
+          }
+        }
+      }
+      .lb-Gvoucher-time{
+        .px2rem750(width,233);
+        .ellipsis();
+        .px2rem750(margin-top,12);
+        .px2rem750(font-size,18);
+        color: #757575;
+      }
+    }
+    //右边部分
+    .lb-Gvoucher-right{
+      border-left: 1px dashed #f5f5f5;
+      position: absolute;
+      top:0;
+      right:0;
+      .flexbox();
+      .justify-content();
+      .align-items();
+      .flex-direction(column);
+      .px2rem750(width,65);
+      height:100%;
+      .px2rem750(font-size,24);
+      color: #212121;
+      line-height: 1;
+      div{
+        line-height: 1;
+      }
+    }
+    .lb-Gvoucher-getTag{
+      position: absolute;
+      bottom:0;
+      right:0;
+      .px2rem750(width,110);
+      .px2rem750(height,87);
+      background-size: 100% 100%;
+      background-image: url(../images/ticket_get.png);
+    }
+  }
+}

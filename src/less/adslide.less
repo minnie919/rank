@@ -1,0 +1,59 @@
+@import "utils/common.less";
+
+.lb-ADslide{
+  .px2rem750(width,750);
+  overflow-y: hidden;
+  overflow-x: visible;
+  .lb-ADslide-container{
+    .flexbox();
+    .lb-ADslide-item{
+      .flex();
+      .px2rem750(margin-right,10);
+      background-size: 100% 100%;
+      .px2rem750(height,238);
+      &:last-child{
+        .px2rem750(margin-right,0);
+      }
+    }
+  }
+  .full {
+    width: 100%;
+    .px2rem750(height,300);
+
+    overflow-y: visible;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    -webkit-overflow-scrolling: touch;
+    will-change: auto;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    transition: top 300ms ease-out;
+    -webkit-transition:top 300ms ease-out;
+    ul{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      li {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow-y: visible;
+        overflow-x: hidden;
+        background-size: 100% 100%;
+      }
+
+    }
+  }
+
+}
+.adslide-blank{
+  .px2rem750(margin-left,20);
+  .px2rem750(width,730);
+}

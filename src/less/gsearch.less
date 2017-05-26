@@ -1,0 +1,47 @@
+@import "utils/common.less";
+
+.lb-Gsearch{
+  background-color: #fff;
+  position: relative;
+  .px2rem750(height,90);
+  width: 100%;
+  .flexbox();
+  .justify-content();
+  .align-items();
+  z-index:500;
+
+  &:before{
+    position: absolute;
+    .px2rem750(top,28);
+    .px2rem750(left,40);
+    content: '';
+    background-image: url(../images/icon_search.png);
+    background-size: 100% 100%;
+    .px2rem750(width,34);
+    .px2rem750(height,34);
+  }
+  .lb-Gsearch-input{
+    .px2rem750(width,636);
+    .px2rem750(height,67);
+    .px2rem750(border-radius,5);
+    background-color: #f5f5f5;
+    color: #bdbdbd;
+    border: none;
+    .fontSize(26);
+    .px2rem750(padding-left,77);
+    .px2rem750(margin-left,17);
+
+  }
+  .lb-Gsearch-sub{
+    .px2rem750(width,114);
+    .px2rem750(height,67);
+    .px2rem750(line-height,67);
+    .px2rem750(margin-right,17);
+    .px2rem750(margin-left,20);
+    .fontSize(28);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ff3c25;
+  }
+}

@@ -1,0 +1,141 @@
+@import "utils/common.less";
+
+.lb-Prush {
+  width: 100%;
+  .lb-Prush-container-row {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y:hidden;
+    white-space: nowrap;
+    vertical-align: top;
+    .px2rem750(width, 750);
+    .px2rem750(height, 344);
+    .px2rem750(margin-top, 20);
+    background-size: 100% 100%;
+    //滚动
+    .lb-Prush-type1 {
+      position: relative;
+      display: inline-block;
+      background-color: #fff;
+      .px2rem750(width, 208);
+      .px2rem750(height, 344);
+      .px2rem750(margin-right,6);
+      .lb-Prush-top {
+        .px2rem750(width, 188);
+        .px2rem750(height, 188);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        .px2rem750(margin-left,10);
+      }
+      .lb-Prush-nobuy{
+        position: absolute;
+        top:0;
+        .px2rem750(left, 10);
+        .px2rem750(width, 188);
+        .px2rem750(height, 188);
+        background-size: 100% 100%;
+        background-image: url(../images/nobuy.png);
+      }
+      .lb-PRush-CornerMark{
+        position: absolute;
+        .px2rem750(height, 54);
+        .px2rem750(width, 104);
+        .px2rem750(top, 10);
+        .px2rem750(left, 10);
+        background-size: 100% 100%;
+      }
+      .lb-Prush-bottom {
+        position: relative;
+        .flexbox();
+        .px2rem750(margin-left, 20);
+        .px2rem750(height, 164);
+        .px2rem750(width, 168);
+        .flex-direction(column);
+        .lb-Prush-title {
+          overflow: hidden;
+          display: -webkit-box;
+          line-height: 1.2;
+          .px2rem750(min-height, 54);
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          color: #212121;
+          white-space: pre-wrap;
+          .fontSize(24);
+        }
+        .lb-Prush-bottomprize{
+          position: absolute;
+          left: 0;
+          .px2rem750(bottom,29);
+          .lb-Prush-prize {
+            color: #ff3c25;
+            .fontSize(40);
+            line-height: 1;
+            .px2rem750(margin-top, 30);
+            .flexbox();
+            .flex-direction(row);
+            .align-items(flex-end);
+            .lb-PRush-bigprize{
+              .fontSize(38);
+              .px2rem750(line-height,40);
+            }
+            .lb-PRush-smallprize{
+              .fontSize(24);
+              .px2rem750(line-height,30);
+            }
+            &:before {
+              content: '￥';
+              color: #ff3c25;
+              .fontSize(24);
+            }
+          }
+          .lb-PRush-subprize{
+            color: #bdbdbd;
+            .fontSize(18);
+            line-height: 1;
+            .px2rem750(margin-top, 5);
+            &:before {
+              content: '参考价';
+              color: #bdbdbd;
+              .px2rem750(margin-right, 5);
+            }
+          }
+        }
+        .lb-Prush-norush{
+          position: absolute;
+          .px2rem750(width, 44);
+          .px2rem750(height, 44);
+          background-image: url(../images/icon_shop_gray.png);
+          background-size: 100% 100%;
+          .px2rem750(bottom,29);
+          .px2rem750(right,-10);
+        }
+        .lb-Prush-rush{
+          position: absolute;
+          .px2rem750(border-radius, 8);
+          .px2rem750(width,150);
+          .px2rem750(height,57);
+          .px2rem750(line-height,57);
+          text-align: center;
+          background-color: #2fd699;
+          .fontSize(24);
+          color: #ffffff;
+          .px2rem750(bottom,29);
+          .px2rem750(right,0);
+        }
+
+        .lb-Prush-icon{
+           .px2rem750(width,44);
+           .px2rem750(height,44);
+            background-image: url("../images/icon_shop.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+          .px2rem750(bottom,29);
+          .px2rem750(right,-10);
+        }
+      }
+
+    }
+  }
+
+}

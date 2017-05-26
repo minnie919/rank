@@ -1,0 +1,44 @@
+@import "utils/common.less";
+
+.lb-Gcountdown{
+  width: 100%;
+  .px2rem750(height,92);
+  background-color: #ffffff;
+  .flexbox();
+  .flex-direction(row);
+  .justify-content(space-between);
+  .align-items();
+  .lb-Gcountdown-title{
+    color: #212121;
+    .fontSize(30);
+    .px2rem750(margin-left,18);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+  .lb-Gcountdown-date{
+    .flexbox();
+    .flex-direction(row);
+    .justify-content();
+    .align-items();
+    .px2rem750(margin-right,20);
+    .fontSize(26);
+    color: #e1e1e1;
+    .lb-Gcountdown-num{
+      background-color: #333333;
+      .px2rem750(border-radius,5);
+      .px2rem750(width,45);
+      .px2rem750(height,45);
+      .px2rem750(margin-left,11);
+      .px2rem750(margin-right,11);
+      .flexbox();
+      .justify-content();
+      .align-items();
+    }
+  }
+}
+.bg{
+  .px2rem750(height,129);
+  background-size: 100% 100%;
+}

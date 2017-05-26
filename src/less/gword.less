@@ -1,0 +1,74 @@
+@import "utils/common.less";
+
+.lb-Gword {
+  .flexbox();
+  .flex-direction(column);
+  .justify-content();
+  .align-items();
+  z-index: 900;
+  .lb-Gword-btn {
+    position: fixed;
+    .px2rem750(top, 121);
+    .px2rem750(width, 152);
+    .px2rem750(height, 56);
+    .px2rem750(line-height, 56);
+    text-align: center;
+    right: 0;
+    z-index: 1000;
+    background-image: url(../images/gword_icon_grey.png);
+    background-size: 100% 100%;
+    color: #ffffff;
+    .fontSize(28);
+  }
+  position: absolute;
+  .lb-Gword-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 700;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.39;
+  }
+  .lb-Gword-close {
+    position: fixed;
+    .px2rem750(top, 35);
+    .px2rem750(right, 59);
+    .px2rem750(width, 35);
+    .px2rem750(height, 35);
+    background-image: url(../images/icon_close.png);
+    background-size: 100% 100%;
+    z-index: 2000;
+  }
+  .lb-Gword-title {
+    color: #ffffff;
+    position: fixed;
+    .fontSize(40);
+    .px2rem750(top, 178);
+    left:50%;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    line-height: 1;
+    z-index: 2000;
+  }
+  .lb-Gword-info {
+    position: fixed;
+    .px2rem750(top, 290);
+    height: 50%;
+    overflow-y: visible;
+    overflow-x: hidden;
+    left:50%;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    .px2rem750(width, 650);
+    .fontSize(28);
+    color: #ffffff;
+    z-index: 2000;
+  }
+
+}

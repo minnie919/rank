@@ -1,0 +1,20 @@
+@import "utils/common.less";
+
+.r-toast {
+  .px2rem750(max-width, 580);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  .px2rem750(padding-top, 24);
+  .px2rem750(padding-bottom, 24);
+  .px2rem750(padding-left, 48);
+  .px2rem750(padding-right, 48);
+  .radius(0.2rem);
+  .fontSize(28);
+  text-align: center;
+  z-index:1000;
+}

@@ -1,0 +1,35 @@
+@import "utils/common.less";
+
+.lb-Gnav{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  .px2rem750(width,750);
+
+  .px2rem750(height,148);
+  .flexbox();
+  .justify-content(space-between);
+  z-index:500;
+
+  background-color: #ffffff;
+  .lb-Gnav-item-container{
+    .flex();
+    .flexbox();
+    .justify-content();
+    .align-items();
+    .flex-direction(column);
+    .lb-Gnav-item-icon{
+      .px2rem750(height,82);
+      .px2rem750(width,82);
+      background-size: 100% 100%;
+    }
+    .lb-Gnav-item-title{
+      width: 100%;
+      text-align: center;
+      color: #757575;
+      .fontSize(24);
+      .px2rem750(margin-top,12);
+
+    }
+  }
+}
